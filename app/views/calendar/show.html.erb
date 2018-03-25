@@ -16,3 +16,19 @@
     <% end %>
   </tbody>
 </table>
+
+<%= form_for Bet.new do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :when %>
+    <%= f.date_field :when, min: @initial_date %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

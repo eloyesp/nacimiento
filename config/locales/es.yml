@@ -1,0 +1,8 @@
+es-AR:
+  activerecord:
+    models:
+      bet: apuesta
+    attributes:
+      bet:
+        name: Nombre
+        when: Fecha
